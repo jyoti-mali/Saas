@@ -1,0 +1,38 @@
+// sixth div tree section 
+
+#sixth-div {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+
+    div {
+        width: 400px;
+        margin: 50px 10px;
+        line-height: $fs-30;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .line {
+            @include line();
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        section {
+            h2 {
+                font-size: $fs-20;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// third div our project section 
+#third-div {
+    line-height: 40px;
+    margin-top: 50px;
+
+    h2 {
+        text-align: center;
+        font-size: $fs-24;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .line {
+        width: 40px;
+        height: 2px;
+        background-color: green;
+        margin: 10px auto;
+        background-color: #03a9f4;
+    }
+
+    .flex-img {
+        width: 1100px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px 0;
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 218px;
+                width: 323px;
+            }
+
+            span {
+                font-size: $fs-18;
+                background-color: #EEEEF0;
+            }
+        }
+
+        a {
+            @include btn();
+            margin-bottom: 20px;
+        }
+    }
+}

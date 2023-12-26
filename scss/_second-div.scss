@@ -1,0 +1,60 @@
+//  second div growing section 
+
+#second-div {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fcfcfc;
+    border-bottom-color: #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid !important;
+    height: 450px;
+    @include sections();
+    z-index:-1;
+
+    .second {
+        .circle {
+            background-color: $yellow;
+        }
+
+        .line {
+            background-color: $yellow;
+        }
+
+        h2 {
+            color: $yellow;
+        }
+    }
+
+    .third {
+        width: 194px;
+
+        .circle {
+            background-color: $green;
+        }
+
+        .line {
+            background-color: $green;
+        }
+
+        h2 {
+            color: $green;
+        }
+    }
+
+    .fourth {
+        .circle {
+            background-color: $orange;
+        }
+
+        .line {
+            background-color: $orange;
+        }
+
+        h2 {
+            color: $orange;
+        }
+    }
+}
+
+
+

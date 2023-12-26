@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    img{
+        height: 50px;
+    }
+    ul{
+        margin: 17px;
+        display: flex; 
+        width: 800px;
+        padding: 10px;
+        justify-content: space-around;
+        li:first-child, :nth-child(2),:nth-child(4){
+            color: $green;
+        }
+       li a{
+        @include btn();
+        padding: 8px 20px;  
+       }
+    }
+}

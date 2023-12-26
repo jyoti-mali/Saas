@@ -1,0 +1,71 @@
+// seventh div From The Blog
+
+#seventh-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: $fs-15 ;
+    margin-bottom: 50px;
+    @include section-style();
+
+    h2 {
+        font-size: $fs-20;
+    }
+
+    p {
+        font-size: $fs-15;
+    }
+
+    .line {
+        @include line();
+    }
+
+    .cards-container {
+        display: flex;
+        gap: 28px;
+
+        .card {
+            border: 1px solid transparent;
+            box-shadow: 1px 0px 5px #D0D4CA;
+            margin: 30px auto;
+            width: 350px;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    width: 350px;
+                }
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 350px;
+
+                h2 {
+                    font-size: $fs-20;
+                    padding: 26px 10px 0 10px;
+                }
+
+                p {
+                    font-size: $fs-13;
+                    line-height: 20px;
+                    padding: 10px;
+                }
+
+                p:last-child {
+                    font-size: $fs-13;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #F7EFE5;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

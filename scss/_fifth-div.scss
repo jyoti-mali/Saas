@@ -1,0 +1,55 @@
+//  fifth div stay in touch
+
+#fifth-div {
+    background-image: url(../assets/images/tim-swaan-eOpewngf68w-unsplash.jpg);
+    background-attachment: fixed;
+    opacity: 0.9;
+    height: 400px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 150px;
+
+        align-items: center;
+
+        i {
+            margin: 50px 0 10px 0;
+            font-size: 60px;
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: white;
+        }
+
+        .line {
+            @include line();
+        }
+
+        form {
+            input {
+                width: 200px;
+                height: 41px;
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+
+            #subscribe {
+                width: 417px;
+                margin: 10px 0;
+                background-color: green;
+                border: 1px solid green;
+                color: white;
+
+                &:hover {
+                    background-color: #4F4A45;
+                    border: 1px solid #4F4A45;
+                }
+            }
+        }
+    }
+}

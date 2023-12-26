@@ -1,0 +1,112 @@
+
+// top-bar styling
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+
+  div:first-child {
+    img {
+      margin: 6px 0 0 10px;
+    }
+  }
+
+  div:last-child {
+    margin: 16px;
+
+    a {
+      background-color: $btn-green;
+      border: 1px solid $btn-green;
+      border-radius: $bd-radius;
+      padding: 6px 20px;
+      color: white;
+    }
+  }
+}
+//  contact navbar styling
+.contact {
+  display: flex;
+  background-color: #f5f5f5;
+  color: #787878;
+  font-size: $fs-13;
+  height: 40px;
+  justify-content: space-between;
+
+  ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 7px 0 0 40px;
+}
+    li {
+      padding: 5px;
+    }
+  }
+
+  .right-content {
+    display: flex;
+
+    .notify {
+      border-radius: 50%;
+      background-color: brown;
+      padding: 7px;
+      margin: 5px;
+      color: white;
+      height: 11px;
+    }
+    form{
+      display: flex;
+      padding-left: 10px;
+     .search-wrapper{
+     i{
+      font-size: 15px;
+        background-color: #EEEEEE;
+        padding: 12px 0 12px 12px;
+        position: absolute;
+        z-index: 1;
+       }
+        input{
+            padding:13px 10px 10px 35px;
+            background-color: #EEEEEE;
+            border: 0;
+        }
+     }
+    }
+  }
+
+  // main section 
+  #main {
+    background-image: url(../assets/images/tim-swaan-eOpewngf68w-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    font-size: 20px;
+    color: white;
+    padding: 100px;
+    margin: 20px 0 30px 0;
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    p {
+        width: 400px;
+        list-style: none;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    button {
+        @include btn();
+        border: 1px solid green;
+        background-color: green;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

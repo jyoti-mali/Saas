@@ -1,0 +1,73 @@
+// fourth div Get expert advice
+
+#fourth-div {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    line-height: 40px;
+
+    div:first-child {
+        width: 431px;
+        line-height: 45px;
+
+        p {
+            font-size: $fs-36;
+        }
+
+        a {
+            @include btn();
+            background-color: #EBF3E8;
+            color: $green;
+            padding: 0 44px;
+            border: 2px solid $green;
+            display: inline-block;
+            margin: 40px 0;
+
+            &:hover {
+                background-color: darkslategrey;
+                color: white;
+                border: 2px solid darkslategrey;
+            }
+        }
+
+    }
+
+    div:nth-child(2) {
+        width: 443px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .line {
+            @include line();
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 20px auto;
+            line-height: 45px;
+
+            li {
+                border-bottom: 1px solid #EBF3E8;
+
+                i {
+                    color: green;
+                }
+            }
+        }
+    }
+
+    div:last-child {
+        width: 250px;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+}

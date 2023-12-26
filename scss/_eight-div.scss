@@ -1,0 +1,88 @@
+// eight div what people say section
+
+#eight-div {
+    width: 1100px;
+    margin: 10px auto;
+
+    .client-header {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            font-size: $fs-24;
+        }
+
+        a {
+            font-size: $fs-15;
+        }
+    }
+
+    .Testimonial-wrapper {
+        display: flex;
+        padding: 0 0 40px 0;
+
+        .Testimonial-content {
+            width: 600px;
+            line-height: $fs-24;
+
+            p {
+                font-size: $fs-20;
+                padding: 20px 0 0 0;
+            }
+
+            .client-info-wrapper {
+                display: flex;
+                margin: 20px 0;
+
+                .client-img {
+                    img {
+                        width: 50px;
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                }
+
+                .client-info {
+                    h5 {
+                        color: white;
+                        font-size: $fs-13;
+                        background-color: $green;
+                        margin: 11px 0 0 44px;
+                        padding: 4px 22px;
+                    }
+                }
+            }
+        }
+
+        .tagore-img {
+            img {
+                padding: 20px 20px 0 20px;
+            }
+
+            p {
+                font-size: $fs-13;
+                padding: 5px 0 0 20px;
+            }
+        }
+
+        .quote {
+            blockquote {
+                font-size: $fs-24;
+                line-height: $fs-36;
+                padding: 50px 0 0 20px;
+            }
+
+            hr {
+                width: 100px;
+                margin: 23px;
+            }
+
+            p {
+                font-size: $fs-13;
+                padding: 0 0 0 21px;
+            }
+        }
+    }
+}
